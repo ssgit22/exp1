@@ -105,14 +105,15 @@ avg_wt,avg_tat;
 printf("Enter number of process:");
 scanf("%d",&n);
 printf("\nEnter Burst Time:\n");
-for(i=0;i<n;i++)  {
+for(i=0;i<n;i++) 
+{
 printf("p%d:",i+1);
 scanf("%d",&bt[i]);
-p[i]=i+1; //contains process number  }
+p[i]=i+1;
+}
 printf(" enter priority of the process ");
 for(i=0;i<n;i++) {
 p[i] = i;
-//printf("Priority of Process");
 printf("p%d ",i+1);
 scanf("%d",&pri[i]);  }
 for(i=0;i<n;i++)
@@ -133,16 +134,19 @@ wt[i]=0;
 for(j=0;j<i;j++)
 wt[i]+=bt[j];
 total+=wt[i];  }
-avg_wt=(float)total/n; //average waiting time
+avg_wt=(float)total/n; 
 total=0;
 printf("\nProcess\t Burst Time \tPriority \tWaiting Time\tTurnaround Time");
 for(i=0;i<n;i++)  {
-tat[i]=bt[i]+wt[i]; //calculate turnaround time
+tat[i]=bt[i]+wt[i]; 
 total+=tat[i];
 printf("\np%d\t\t %d\t\t %d\t\t %d\t\t\t%d",p[i],bt[i],pri[i],wt[i],tat[i]);   }
 avg_tat=(float)total/n; //average turnaround time
 printf("\n\nAverage Waiting Time=%f",avg_wt);
-printf("\nAverage Turnaround Time=%f\n",avg_tat);  }
+printf("\nAverage Turnaround Time=%f\n",avg_tat);
+}
+
+
 
 ```
 
