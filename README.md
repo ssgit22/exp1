@@ -1,4 +1,4 @@
-# exp1
+# exp2
 
 ### CPU SCHEDULING ALGORITHMS FCFS:
 ```
